@@ -1,0 +1,53 @@
+body{
+    margin: 0;
+    background-color: #ccc;
+}
+section{
+    padding: 40px;
+}
+section input{
+    width: 250px;
+    height: 30px;
+    border: 1px solid #ededed;
+    border-radius: 5px;
+    padding: 0 5px;
+    font-size: 16px;
+    color: #000;
+}
+section input::placeholder{
+   font-family: Ebrima, sans-serif;
+    font-size: 16px;
+    color: #ccc;
+}
+section input:active,
+section input:focus,
+section input:hover{
+    outline: none;
+}
+section button{
+    width: 150px;
+    height: 30px;
+    font-family: Ebrima, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+    border-radius: 5px;
+    border: 1px solid #ededed;
+}
+ul{
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+    background-color: #fff;
+    border-radius: 5px;
+}
+ul li{
+    padding: 5px;
+    word-break: break-all;
+}
+ul li:last-child{
+    padding-bottom: 20px;
+}
+ul li:first-child{
+    padding-top: 20px;
+}

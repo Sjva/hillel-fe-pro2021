@@ -1,0 +1,5 @@
+.idea
+/.idea
+.idea/workspace.xml
+.git/index.lock
+/index.lock
