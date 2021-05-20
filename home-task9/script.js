@@ -1,5 +1,5 @@
 
-    let listEl = document.querySelector('ul');
+    let listEl = document.querySelector("ul");
     let inputEl = document.getElementById("input-text");
     let pushBtn = document.getElementById("push-btn");
 
