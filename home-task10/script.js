@@ -25,6 +25,7 @@
         }else{
             verMessageEl.innerText = `Ошибка при вводе логина или пароля.`;
             verMessageEl.classList.add("error");
+            pasEl.value = "";
         }
     });
 
