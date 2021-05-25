@@ -13,7 +13,7 @@
         });
     });
 
-    pushBtnEl.addEventListener("click", (e) => {
+    function verificationMes (e){
         const verMessageEl = document.getElementById("verification-mes");
         const formEl = document.getElementById("form-login");
 
@@ -27,5 +27,7 @@
             verMessageEl.classList.add("error");
             pasEl.value = "";
         }
-    });
+    }
+
+    pushBtnEl.addEventListener("click", verificationMes);
 
