@@ -13,12 +13,17 @@
         });
     });
 
-    function verificationMes (e){
+    function verificationMes (){
+        if(loginEl.value === "admin" && pasEl.value === "password123"){
+           return true;
+        }
+    }
+
+    pushBtnEl.addEventListener("click", (e) => {
         const verMessageEl = document.getElementById("verification-mes");
         const formEl = document.getElementById("form-login");
-
         e.preventDefault();
-        if(loginEl.value === "admin" && pasEl.value === "password123"){
+        if(verificationMes()){
             formEl.style.display = "none";
             verMessageEl.innerText = `Успешная верификация.`;
             verMessageEl.classList.add("success");
@@ -27,7 +32,5 @@
             verMessageEl.classList.add("error");
             pasEl.value = "";
         }
-    }
-
-    pushBtnEl.addEventListener("click", verificationMes);
+    });
 
