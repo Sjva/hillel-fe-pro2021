@@ -3,8 +3,6 @@ let inputEl = document.getElementById("input-text");
 let pushBtnEl = document.getElementById("push-btn");
 
 function createElementsItem (){
-    if (!inputEl.value) return; //проверка на пуcтой инпут
-
     let listLiEl = document.createElement("li");
 
     // дбавить чекбокс.
@@ -36,6 +34,7 @@ document.addEventListener("click", (event) => {
     let element = event.target;
     // запуск функций по клику на кнопку
     if (element === pushBtnEl) {
+        if (!inputEl.value) return; //проверка на пуcтой инпут
         createElementsItem ();
     }
 
