@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ee36fc8-d70f-49f5-8945-bd7de57541ef" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/home-task11/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home-task11/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home-task11/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home-task10/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/home-task10/script.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,44 +17,45 @@
     <session id="-1094608916">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.20" value="1" />
+          <entry key="project.open.time.40" value="1" />
           <entry key="project.open.time.46" value="1" />
           <entry key="project.open.time.49" value="1" />
           <entry key="project.open.time.58" value="1" />
           <entry key="project.open.time.68" value="1" />
           <entry key="project.open.time.79" value="1" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="321" />
-          <entry key="html" value="307" />
-          <entry key="js" value="717" />
+          <entry key="css" value="613" />
+          <entry key="html" value="580" />
+          <entry key="js" value="2177" />
           <entry key="txt" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="321" />
-          <entry key="HTML" value="307" />
-          <entry key="JavaScript" value="717" />
+          <entry key="CSS" value="613" />
+          <entry key="HTML" value="580" />
+          <entry key="JavaScript" value="2177" />
           <entry key="PLAIN_TEXT" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="1" />
-          <entry key="html" value="2" />
-          <entry key="js" value="4" />
+          <entry key="css" value="2" />
+          <entry key="html" value="4" />
+          <entry key="js" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="1" />
-          <entry key="HTML" value="2" />
-          <entry key="JavaScript" value="4" />
+          <entry key="CSS" value="2" />
+          <entry key="HTML" value="4" />
+          <entry key="JavaScript" value="6" />
         </counts>
       </usages-collector>
     </session>
@@ -60,31 +63,31 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/home-task10/index.html">
+        <entry file="file://$PROJECT_DIR$/home-task11/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
-              <caret line="25" column="29" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
+            <state relative-caret-position="408">
+              <caret line="22" column="24" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="24" />
               <folding>
-                <marker date="1621835107925" expanded="true" signature="209:978" ph="..." />
+                <marker date="1622395106473" expanded="true" signature="511:947" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/home-task10/script.js">
+        <entry file="file://$PROJECT_DIR$/home-task11/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+            <state relative-caret-position="663">
+              <caret line="37" column="32" lean-forward="true" selection-start-line="37" selection-start-column="32" selection-end-line="37" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/home-task10/style.css">
+        <entry file="file://$PROJECT_DIR$/home-task11/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+            <state relative-caret-position="136">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -102,6 +105,9 @@
         <option value="$PROJECT_DIR$/home-task10/style.css" />
         <option value="$PROJECT_DIR$/home-task10/index.html" />
         <option value="$PROJECT_DIR$/home-task10/script.js" />
+        <option value="$PROJECT_DIR$/home-task11/index.html" />
+        <option value="$PROJECT_DIR$/home-task11/style.css" />
+        <option value="$PROJECT_DIR$/home-task11/script.js" />
       </list>
     </option>
   </component>
@@ -134,7 +140,17 @@
             <path>
               <item name="home-task-fepro" type="b2602c69:ProjectViewProjectNode" />
               <item name="home-task-fepro" type="462c0819:PsiDirectoryNode" />
+              <item name="home-task9" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="home-task-fepro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="home-task-fepro" type="462c0819:PsiDirectoryNode" />
               <item name="home-task10" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="home-task-fepro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="home-task-fepro" type="462c0819:PsiDirectoryNode" />
+              <item name="home-task11" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -147,6 +163,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Hillel\Front-end\home-task-fepro\home-task11" />
       <recent name="E:\Hillel\Front-end\home-task-fepro" />
     </key>
   </component>
@@ -184,7 +201,8 @@
       <workItem from="1621774527655" duration="13052000" />
       <workItem from="1621835041370" duration="344000" />
       <workItem from="1621958792383" duration="345000" />
-      <workItem from="1621966534540" duration="1516000" />
+      <workItem from="1621966534540" duration="2195000" />
+      <workItem from="1622370114811" duration="27920000" />
     </task>
     <task id="LOCAL-00001" summary="home task #10">
       <created>1621787880806</created>
@@ -204,12 +222,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15493000" />
+    <option name="totallyTimeSpent" value="44092000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1376" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23176292" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2363222" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -222,7 +241,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.27659574" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.27659574" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -257,13 +276,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/home-task9/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="33" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/home-task9/script.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -288,10 +300,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/home-task9/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="33" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/home-task10/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+        <state relative-caret-position="119">
+          <caret line="21" column="48" lean-forward="true" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home-task11/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home-task11/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="22" column="24" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="24" />
+          <folding>
+            <marker date="1622395106473" expanded="true" signature="511:947" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home-task11/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="37" column="32" lean-forward="true" selection-start-line="37" selection-start-column="32" selection-end-line="37" selection-end-column="32" />
         </state>
       </provider>
     </entry>

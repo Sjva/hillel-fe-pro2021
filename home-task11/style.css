@@ -1,0 +1,90 @@
+body{
+    margin: 0;
+    background-color: #ccc;
+}
+section{
+    padding: 40px;
+}
+section #input-text{
+    width: 290px;
+    height: 30px;
+    border: 1px solid #ededed;
+    border-radius: 5px;
+    padding: 0 5px;
+    font-size: 16px;
+    color: #000;
+}
+section #input-text::placeholder{
+   font-family: Ebrima, sans-serif;
+    font-size: 16px;
+    color: #ccc;
+}
+section #input-text:active,
+section #input-text:focus,
+section #input-text:hover{
+    outline: none;
+}
+section button{
+    width: 100px;
+    height: 30px;
+    font-family: Ebrima, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+    border-radius: 5px;
+    border: 1px solid #ededed;
+}
+ul{
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    background-color: #fff;
+    border-radius: 5px;
+    list-style: none;
+    padding: 0;
+}
+ul li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    word-break: break-all;
+    cursor: pointer;
+}
+ul li .checkbox{
+    width: 100%;
+    max-width: 15px;
+    height: 15px;
+}
+ul li:last-child{
+    padding-bottom: 20px;
+}
+ul li:first-child{
+    padding-top: 20px;
+}
+ul li .list-item{
+    font-family: Ebrima, sans-serif;
+    font-size: 16px;
+    margin: 0 5px;
+    width: 100%;
+    max-width: 170px;
+}
+ul li .data{
+    margin: 0 0 0 5px;
+    font-size: 14px;
+    white-space: nowrap;
+}
+ul li i{
+    margin-left: 10px;
+    opacity: 0;
+    transition: 0.3s;
+}
+ul li i:hover{
+    color: blue;
+}
+ul li:hover i{
+    opacity: 1;
+}
+.strikethrough{
+    text-decoration: line-through;
+}
