@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6ee36fc8-d70f-49f5-8945-bd7de57541ef" name="Default Changelist" comment="">
+    <list default="true" id="6ee36fc8-d70f-49f5-8945-bd7de57541ef" name="Default Changelist" comment="home task #10">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home-task11/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/home-task11/script.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,30 +15,31 @@
     <session id="-1094608916">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
+          <entry key="project.closed" value="6" />
           <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.40" value="1" />
           <entry key="project.open.time.46" value="1" />
           <entry key="project.open.time.49" value="1" />
           <entry key="project.open.time.58" value="1" />
+          <entry key="project.open.time.59" value="1" />
           <entry key="project.open.time.68" value="1" />
           <entry key="project.open.time.79" value="1" />
-          <entry key="project.opened" value="7" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="613" />
           <entry key="html" value="581" />
-          <entry key="js" value="2179" />
+          <entry key="js" value="2395" />
           <entry key="txt" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="613" />
-          <entry key="HTML" value="581" />
-          <entry key="JavaScript" value="2179" />
+          <entry key="HTML" value="588" />
+          <entry key="JavaScript" value="2388" />
           <entry key="PLAIN_TEXT" value="13" />
         </counts>
       </usages-collector>
@@ -74,8 +76,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/home-task11/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="36" column="62" selection-start-line="36" selection-start-column="62" selection-end-line="36" selection-end-column="62" />
+            <state relative-caret-position="238">
+              <caret line="45" column="61" selection-start-line="45" selection-start-column="61" selection-end-line="45" selection-end-column="61" />
             </state>
           </provider>
         </entry>
@@ -199,7 +201,8 @@
       <workItem from="1621835041370" duration="344000" />
       <workItem from="1621958792383" duration="345000" />
       <workItem from="1621966534540" duration="2195000" />
-      <workItem from="1622370114811" duration="28465000" />
+      <workItem from="1622370114811" duration="29159000" />
+      <workItem from="1622650684517" duration="2338000" />
     </task>
     <task id="LOCAL-00001" summary="home task #10">
       <created>1621787880806</created>
@@ -219,13 +222,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44637000" />
+    <option name="totallyTimeSpent" value="47669000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23524962" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23903178" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -291,9 +294,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="259">
           <caret line="25" column="29" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
-          <folding>
-            <marker date="1621835107925" expanded="true" signature="209:978" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -330,8 +330,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/home-task11/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="36" column="62" selection-start-line="36" selection-start-column="62" selection-end-line="36" selection-end-column="62" />
+        <state relative-caret-position="238">
+          <caret line="45" column="61" selection-start-line="45" selection-start-column="61" selection-end-line="45" selection-end-column="61" />
         </state>
       </provider>
     </entry>
