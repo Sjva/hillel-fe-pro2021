@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home task №13</title>
+    <!--font-awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<!--Написать функцию конструктор Accordion-->
+<!--Пример того, как должен https://getbootstrap.com/docs/4.5/components/collapse/#accordion-example-->
+<h1>Hi man, add your favorite band and lyrics</h1>
+<div class="accordion-block">
+    <div id="accordion">
+        <div>
+            <div>RHCP-Dark necessities</div>
+            <div>
+                <h3>Dark necessities</h3>
+                <pre>
+                Coming on to the light of day we got
+            Many moons that are deep at play so I
+            Keep an eye on the shadow smile
+            To see what it has to say
+            You and I both know
+            Everything must go away
+            What do you say
+
+            Spinning Knot that is on my heart is like a
+            Bit of light in a touch of dark you got
+            Sneak attack from the zodiac
+            But I see your fire spark
+            Eat the breeze and go
+            Blow by blow and go away
+            What do you say
+
+            </pre>
+            </div>
+        </div>
+        <div>
+            <div>Foo Fighters - The Pretender</div>
+            <div>
+                <h3>The Pretender</h3>
+                <pre>
+            Keep you in the dark
+            Тебя держат в неизвестности,
+            You know they all pretend
+            Ты знаешь, что все притворяются.
+            Keep you in the dark
+            Тебя держат в неизвестности,
+            And so it all began
+            Ну, вот, началось…
+
+
+            Send in your skeletons
+            Давай, вытаскивай свои скелеты,
+            Sing as their bones come marching in...again
+            Пой в такт марширующим костям,
+            They need you buried deep
+            Им нужно, чтобы тебя похоронили, глубоко закопав.
+            The secrets that you keep are ever ready
+            Твои секреты готовы выйти наружу,
+            Are you ready?
+            А ты к этому готов?
+            I'm finished making sense
+            Я больше не хочу ни в чём разбираться,
+            Done pleading ignorance
+            Я устал признаваться в собственном невежестве
+            That whole...defense
+            И защищаться…
+         </pre>
+            </div>
+        </div>
+        <div>
+            <div>Depeche Mode - Angel</div>
+            <div>
+                <h3>Angel</h3>
+                <pre>
+            The Angel of Love was upon me and
+            Ангел Любви был надо мной.
+            Lord I felt so small
+            Боже, я чувствовал себя таким ничтожным!
+            The legs beneath me weakened
+            Ноги подо мной ослабли,
+            I began to crawl
+            И я стал ползти.
+            Confused and contented I slithered around
+            Смущенный и довольный, я скатывался отовсюду.
+            Reveal was beyond me
+            Разоблачение позади,
+            I was lost, I was found
+            Я был потерян, затем — найден.
+
+
+            The Angel of Love was upon me and
+            Ангел Любви был надо мной.
+            Lord I felt so weak
+            Боже, я был таким слабым.
+            I felt my tongue move in my mouth and
+            Я почувствовал, как у меня во рту зашевелился язык,
+            I began to speak
+            И из меня полилась речь
+            A strange kind of language I don't understand
+            На каком-то странном языке, которого не понимаю,
+            A babbling fountain
+            Невнятным потоком, 1
+            I couldn't have planned
+            Придумать который сам я не мог.
+
+            </pre>
+            </div>
+        </div>
+    </div>
+    <div id="additional-func">
+        <div class="add-block">
+            <h3>Add band and text song</h3>
+            <form action="/">
+                <input id="title-text" type="text" placeholder="Write the name of the group">
+                <textarea id="content-text" name="" id="" cols="30" rows="10" placeholder="Add text song"></textarea>
+                <button id="add-text-btn" type="submit">Add text</button>
+            </form>
+        </div>
+        <div class="btns">
+            <button id="open-all-blocks">Open all blocks</button>
+            <button id="close-all-blocks">Close all blocks</button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

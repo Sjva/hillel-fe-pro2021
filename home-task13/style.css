@@ -1,0 +1,178 @@
+h1{
+    font-family: Ebrima, sans-serif;
+}
+.accordion-block{
+    font-family: Ebrima, sans-serif;
+    display: flex;
+}
+
+#accordion{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 50%;
+    margin-right: 40px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+#accordion .block{
+    width: 100%;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+#accordion .block:last-child{
+    border: none;
+}
+#accordion .block .title{
+    font-family: Ebrima, sans-serif;
+    display: block;
+    padding: 10px;
+    background-color: rgba(0,0,0,.03);
+    font-size: 22px;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.block > .content{
+    display: none;
+    padding: 20px;
+    text-align: left;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.block.open > .content{
+    display: block;
+    transition: 0.3s;
+}
+#accordion .block .content h3{
+    text-align: center;
+}
+
+#additional-func{
+    width: 40%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.add-block{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.add-block form{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+}
+.add-block form input{
+    width: -webkit-fill-available;
+    height: 30px;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    transition: 0.3s;
+}
+.add-block form input:active,
+.add-block form input:focus,
+.add-block form input:hover{
+    border: 1px solid blue;
+    outline: none;
+    box-shadow: none;
+}
+.add-block form textarea{
+    width: -webkit-fill-available;
+    height: 100px;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    resize: none;
+    transition: 0.3s;
+}
+.add-block form textarea:active,
+.add-block form textarea:focus,
+.add-block form textarea:hover{
+    border: 1px solid blue;
+    outline: none;
+    box-shadow: none;
+}
+.add-block form button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 100%;
+    font-size: 16px;
+    color: #fff;
+    background-color: silver;
+    border-radius: 5px;
+    margin-right: 20px;
+    margin-top: 20px;
+    border: 1px solid transparent;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.add-block form button:hover{
+    border: 1px solid blue;
+    color: blue;
+}
+.btns{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    cursor: pointer;
+}
+.btns button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 100%;
+    max-width: 200px;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    background-color: blue;
+    border-radius: 5px;
+    margin: 10px 20px 0 0;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.btns button:hover{
+    opacity: 0.8;
+}
+#close-all-blocks{
+    background-color: red;
+}
+
+/*media*/
+@media only screen and (max-width: 768px){
+    .accordion-block{
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #accordion {
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+    #additional-func {
+        display: flex;
+        width: 90%;
+    }
+}
