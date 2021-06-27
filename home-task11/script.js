@@ -3,13 +3,17 @@ let listEl = document.querySelector("ul");
 let inputEl = document.getElementById("input-text");
 let pushBtnEl = document.getElementById("push-btn");
 
+let dataItem = () => {
+    let myDate = new Date();
+    return `${myDate.getDate()}/${myDate.getMonth() + 1}/${myDate.getFullYear()} ${myDate.getHours()}:${myDate.getMinutes()}`;
+};
+
 function createElementsItem (){
     let listLiEl = document.createElement("li");
-    let myDate = new Date();
-    let dataItemList = `${myDate.getDate()}/${myDate.getMonth() + 1}/${myDate.getFullYear()} ${myDate.getHours()}:${myDate.getMinutes()}`;
+    const itemTemplate = document.getElementById("item-template").innerHTML;
 
     // дбавить елементы в li.
-    listLiEl.insertAdjacentHTML("afterBegin", `<input class="checkbox" type="checkbox"><span class="list-item">${inputEl.value}</span><pre class="data">${dataItemList}</pre><i class="fa fa-trash" aria-hidden="true"></i><i class="fa fa-clone" aria-hidden="true"></i>`);
+    listLiEl.innerHTML = itemTemplate.replaceAll("{{label}}", inputEl.value).replaceAll("{{date}}", dataItem());
 
     listEl.appendChild(listLiEl);
     inputEl.value = "";
@@ -21,22 +25,16 @@ document.addEventListener("click", (event) => {
     let element = event.target;
 
     // запуск функций по клику на кнопку
-    if (element === pushBtnEl) {
+    if (element.classList.contains("btn-submit")) {
         if (!inputEl.value) return; //проверка на пуcтой инпут
         createElementsItem ();
     } else if (element.type === "checkbox") {  // клик на чекбокс
-        if (element.checked) {
-            element.nextSibling.classList.add("strikethrough");
-        }
-        else {
-            element.nextSibling.classList.remove("strikethrough");
-        }
+        element.nextSibling.classList.toggle("strikethrough");
     } else if (element.classList.contains('fa-trash')) { // удаляем строку по клику на корзину
         element.parentElement.remove();
     } else if (element.classList.contains('fa-clone')) {  // копируем li по клику на иконку копирования
         let cloneItem = element.parentElement.cloneNode(true);
-        element.parentElement.parentElement.append(cloneItem);
-        let myNewDate = new Date();
-        cloneItem.childNodes[2].innerText = `${myNewDate.getDate()}/${myNewDate.getMonth() + 1}/${myNewDate.getFullYear()} ${myNewDate.getHours()}:${myNewDate.getMinutes()}`;
+        listEl.append(cloneItem);
+        cloneItem.childNodes[3].innerHTML = dataItem();
     }
 });

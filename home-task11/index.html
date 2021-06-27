@@ -20,9 +20,13 @@
 
 <section>
     <input type="text" id="input-text" title="Create todo list" placeholder="Add text">
-    <button id="push-btn" title="Push me man">Click me</button>
+    <button class="btn-submit" id="push-btn" title="Push me man">Click me</button>
     <ul></ul>
 </section>
+
+<script id="item-template" type="text/template">
+        <input class="checkbox" type="checkbox"><span class="list-item">{{label}}</span><pre class="data">{{date}}</pre><i class="fa fa-trash" aria-hidden="true"></i><i class="fa fa-clone" aria-hidden="true"></i>
+</script>
 
 </body>
 </html>
