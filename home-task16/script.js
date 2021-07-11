@@ -4,7 +4,7 @@
     const pushBtnEl = document.getElementById("check-btn");
     let listEl = document.querySelector("ul");
 
-
+    // Проверка инпута на введенный текст
     document.querySelectorAll("input").forEach(input => {
         input.addEventListener("blur", () => {
             if (!loginEl.value || !pasEl.value) {
@@ -38,6 +38,7 @@
         });
     }
 
+    // клик по кнопке формы
     pushBtnEl.addEventListener("click", (e) => {
         const login = loginEl.value;
         const password = pasEl.value;
@@ -50,16 +51,21 @@
             verMessageEl.innerText = `Успешная верификация.`;
             verMessageEl.classList.add("success");
             listEl.classList.add("success");
-            listUser ();
-
-        }).catch(e => {
-            verMessageEl.innerText = `Ошибка при вводе логина или пароля.`;
-            verMessageEl.classList.add("error");
-            pasEl.value = "";
-        });
+        })
+            .then(() => {
+                return listUser();
+            })
+            .then(e => {
+                addList(e);
+            })
+            .catch(e => {
+                verMessageEl.innerText = `Ошибка при вводе логина или пароля.`;
+                verMessageEl.classList.add("error");
+                pasEl.value = "";
+            });
     });
 
-// получить список пользователей
+    // получить список пользователей
     function listUser () {
         return new Promise((resolve, reject) => {
             const xhr = new XMLHttpRequest();
@@ -68,18 +74,25 @@
             xhr.onload = (e) => {
                 const response = JSON.parse(e.target.response);
                 const status = e.target.status;
-                const itemTemplate = document.getElementById("item-template").innerHTML;;
 
-                response.data.forEach(e => {
-                    let listLiEl = document.createElement("li");
-                    listLiEl.innerHTML = itemTemplate.replaceAll("{{ava}}", e.avatar).replaceAll("{{name}}", e.first_name).replaceAll("{{last_name}}", e.last_name);
-                    listEl.appendChild(listLiEl);
-                });
                 if (status >= 200 && status < 400) {
-                    resolve(JSON.parse(e.target.response))
+                    resolve(JSON.parse(e.target.response));
                 } else {
                     reject(JSON.parse(e.target.response));
                 }
             };
         });
     }
+
+    // функция для отрисовки списка юзеров
+    function addList(response) {
+        const itemTemplate = document.getElementById("item-template").innerHTML;
+
+        return response.data.forEach(e => {
+            let listLiEl = document.createElement("li");
+            listLiEl.innerHTML = itemTemplate.replaceAll("{{ava}}", e.avatar).replaceAll("{{name}}", e.first_name).replaceAll("{{last_name}}", e.last_name);
+            listEl.appendChild(listLiEl);
+        });
+    }
+
+
