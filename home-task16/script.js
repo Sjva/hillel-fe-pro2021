@@ -52,6 +52,11 @@
             verMessageEl.classList.add("success");
             listEl.classList.add("success");
         })
+            .catch(e => {
+                verMessageEl.innerText = `Ошибка при вводе логина или пароля.`;
+                verMessageEl.classList.add("error");
+                pasEl.value = "";
+            })
             .then(() => {
                 return listUser();
             })
@@ -59,10 +64,9 @@
                 addList(e);
             })
             .catch(e => {
-                verMessageEl.innerText = `Ошибка при вводе логина или пароля.`;
-                verMessageEl.classList.add("error");
-                pasEl.value = "";
-            });
+            console.log("The list of users is not loaded for some reason")
+        })
+
     });
 
     // получить список пользователей
