@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home task №16</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<!--Задание для домашки #16-->
+<!--В домашнее задание #15, после успешного логина, нужно добавить отображение списка пользователей, которые приходят по EP https://reqres.in/api/users?page=1. Отображение должно быть в удобном для вас виде, но, с использованием html-template.-->
+
+<!--<pre>-->
+    <!--верный логин и пароль-->
+    <!--{-->
+    <!--"email": "eve.holt@reqres.in",-->
+    <!--"password": "cityslicka"-->
+<!--}-->
+<!--</pre>-->
+<section class="form-block">
+    <form id="form-login" action="/" method="post">
+        <input type="text" id="input-login" class="form-input" title="Введите логин" placeholder="Введите логин">
+        <input type="password" id="input-pass" class="form-input" title="Введите пароль" placeholder="Введите пароль">
+        <button id="check-btn" type="submit" title="Нажм меня" disabled="disabled">Логин</button>
+    </form>
+
+    <p id="verification-mes"></p>
+    <ul></ul>
+</section>
+
+
+
+<script id="item-template" type="text/template">
+    <img src="{{ava}}" alt="ava"><span>{{name}} {{last_name}}</span>
+</script>
+
+</body>
+</html>
