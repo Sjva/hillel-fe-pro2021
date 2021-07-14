@@ -56,6 +56,7 @@
                 verMessageEl.innerText = `Ошибка при вводе логина или пароля.`;
                 verMessageEl.classList.add("error");
                 pasEl.value = "";
+                throw new Error('Auth error'); //останаливает выполение ф-й при ошибке
             })
             .then(() => {
                 return listUser();
