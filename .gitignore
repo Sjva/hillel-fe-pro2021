@@ -3,3 +3,5 @@
 .idea/workspace.xml
 .git/index.lock
 /index.lock
+/node_modules
+node_modules
