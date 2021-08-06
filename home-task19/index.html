@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 19 | Login Form With HTTP and Users List</title>
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./core/utils/render.js" type="module"></script>
+    <script src="./components/LoginForm/LoginFromComponent.js" type="module"></script>
+    <script src="./components/UserList/UserListComponent.js" type="module"></script>
+    <script src="./core/Component.js" type="module"></script>
+    <script src="./script.js" type="module" defer></script>
+    <script src="./api.js" type="module"></script>
+</head>
+
+<!--Задание ДЗ№19-->
+<!--Реализовать веб-приложение, в котором будет два состояния (за основу можно взять домашку #16):-->
+
+<!--Пользователь не залогинен - на странице должна отображаться форма логина, после введения корректных данных и получения успешного ответа от BE (https://reqres.in/api/login), приложение переходит в следующее состояние;-->
+<!--Список пользователей - получается данные список из ЕП (https://reqres.in/api/users) и отображается в виде таблицы/списка с возможностью удаления и редактирования каждого из пользователей (см. https://reqres.in/). Помимо списка, должна быть возможность создания нового пользователя через диалоговое окно (возле списка должна находится кнопка, по нажатию на которую, открывается окно с формой для создания пользователя).-->
+
+<body>
+<main class="container" id="main-entry"></main>
+
+<script type="text/template" id="login-form-tpl">
+    <div class="nes-container actions-form-container block" id="login-form">
+        <span class="nes-text is-error hidden" id="error-message">Incorrect credentials</span>
+        <div class="nes-field">
+            <label for="item-content-input">Login: </label>
+            <input type="text" id="login-input" class="nes-input" value="eve.holt@reqres.in">
+        </div>
+        <div class="nes-field">
+            <label for="item-content-input">Password: </label>
+            <input type="password" id="password-input" class="nes-input">
+        </div>
+        <button type="button" id="sign-in-btn" class="nes-btn is-primary actions-form-btn"
+        >Sign In</button>
+    </div>
+    <div class="nes-container actions-form-container block hidden" id="main-block">
+        <h1>Welcome, Admin!</h1>
+        <ul id="user-list"></ul>
+    </div>
+</script>
+<script type="text/template" id="user-list-item-tpl">
+    <section>
+        <button type="button" class="nes-btn is-primary" id="create-user-btn";>
+            Create User
+        </button>
+        <dialog class="nes-dialog" id="user-form"  >
+            <form method="dialog" id="user-inner-form">
+                <div class="nes-field">
+                    <label for="name_field">User name</label>
+                    <input type="text" id="name_field" class="nes-input" value="{{first_name}} {{last_name}}">
+                </div>
+                <div class="nes-field">
+                    <label for="job_field">User job</label>
+                    <input type="text" id="job_field" class="nes-input">
+                </div>
+                <menu class="dialog-menu">
+                    <button class="nes-btn">Cancel</button>
+                    <button class="nes-btn is-primary" id="confirm">Confirm</button>
+                </menu>
+            </form>
+        </dialog>
+    </section>
+    <button id="logout-btn">Log out</button>
+    <ul id="list" class="nes-list">
+        <li data-id="{{id}}">
+            <img src="{{avatar}}"/>
+            <span>{{first_name}} {{last_name}}</span>
+            <button class="update">Update</button>
+            <button class="delete">Delete</button>
+        </li>
+    </ul>
+
+</script>
+    <!--<script>-->
+        <!--const delUserEl = document.getElementById("btnDelete");-->
+        <!--const updateUserEl = document.getElementsByClassName("btnUpdateUser");-->
+        <!--const addModalBtn = document.getElementById("addNewUser");-->
+
+        <!--const formNameEl = document.getElementById("name");-->
+        <!--const formSurnameEl = document.getElementById("surname");-->
+        <!--const formUpdateBtnEl = document.getElementById("form-update-btn");-->
+
+        <!--const formNameUserEl = document.getElementById("name-user");-->
+        <!--const formJobEl = document.getElementById("job");-->
+        <!--const formUserBtnEl = document.getElementById("form-user-btn");-->
+
+        <!--// вызов формы update-->
+        <!--updateUserEl.forEach(btn => {-->
+            <!--btn.addEventListener("click", () => {-->
+                <!--console.log("fdfd");-->
+                <!--const formUpdate = document.getElementById("dialog-dark");-->
+                <!--// formUpdate.classList.add('active');-->
+                <!--formUpdate.style.display = "flex";-->
+            <!--});-->
+        <!--});-->
+            <!--addModalBtn.addEventListener('click', e => {-->
+                <!--document.getElementById('addNewUser').classList.add('active');-->
+            <!--});-->
+            <!--delUserEl.addEventListener('click', e => {-->
+                <!--document.getElementById('addNewUser').classList.add('active');-->
+            <!--});-->
+
+
+
+        <!--// Проверка на введенные елементы в поля-->
+        <!--document.querySelectorAll("input").forEach(input => {-->
+            <!--input.addEventListener("blur", () => {-->
+                <!--if (!loginEl.value || !pasEl.value) {-->
+                    <!--formUpdateBtnEl.setAttribute("disabled", "disabled");-->
+                    <!--formUserBtnEl.setAttribute("disabled", "disabled");-->
+                <!--} else {-->
+                    <!--formUpdateBtnEl.removeAttribute("disabled", "disabled");-->
+                    <!--formUserBtnEl.removeAttribute("disabled", "disabled");-->
+                <!--}-->
+            <!--});-->
+        <!--});-->
+    <!--</script>-->
+</body>
+
+</html>
