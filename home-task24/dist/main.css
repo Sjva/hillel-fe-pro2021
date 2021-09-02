@@ -1,0 +1,390 @@
+/*!***************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/main.scss ***!
+  \***************************************************************************************************************/
+body {
+  font-family: Cambria, sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  background-color: rgba(204, 204, 204, 0.3);
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.3s;
+}
+a:hover {
+  text-decoration: none;
+}
+
+#app {
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 991px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .container {
+    padding: 0 15px;
+  }
+}
+
+.p20 {
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid blue;
+  box-shadow: 1px 1px 5px 1px rgba(204, 204, 204, 0.9);
+  background: #fff;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: brown;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 18px;
+  height: 40px;
+  padding: 0 10px;
+  border: none;
+  transition: 0.3s;
+  text-decoration: none;
+}
+.btn:hover {
+  opacity: 0.8;
+}
+
+header {
+  position: fixed;
+  background: #ffffff;
+  padding: 20px 0;
+  width: 100%;
+  border-radius: 0;
+  margin-bottom: 40px;
+  z-index: 1;
+}
+header .logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: brown;
+  font-size: 30px;
+  font-weight: 700;
+  text-decoration: none;
+}
+header .logo img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+main {
+  margin-top: 140px;
+}
+main .container {
+  display: flex;
+  justify-content: space-between;
+}
+main .sidebar-tweet {
+  position: sticky;
+  top: 140px;
+  width: 100%;
+  max-width: 360px;
+  margin-left: 40px;
+  height: 100%;
+}
+main .sidebar-tweet .sidebar-tweet-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+main .sidebar-tweet .sidebar-tweet-list li {
+  padding-bottom: 15px;
+}
+main .sidebar-tweet .sidebar-tweet-list li a {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-decoration: none;
+  font-size: 18px;
+  color: #181818;
+  font-weight: 700;
+}
+main .sidebar-tweet .sidebar-tweet-list li a i {
+  margin-right: 10px;
+  width: 100%;
+  max-width: 12px;
+}
+main .sidebar-tweet .sidebar-tweet-list li a i:hover {
+  color: brown;
+}
+main .sidebar-tweet .sidebar-tweet-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: brown;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 18px;
+  height: 40px;
+}
+main .sidebar-tweet .sidebar-tweet-btn:hover {
+  opacity: 0.8;
+}
+main .main-content {
+  width: calc(100% - 400px);
+}
+main .main-content .form-suntweet {
+  margin-bottom: 20px;
+}
+main .main-content .form-suntweet p {
+  font-size: 18px;
+  color: #181818;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+main .main-content .form-suntweet form {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+main .main-content .form-suntweet form textarea {
+  width: 100%;
+  border: 1px solid blue;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+main .main-content .tweet {
+  display: flex;
+  width: 100%;
+  border: 1px solid blue;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+main .main-content .tweet .avatar {
+  margin-right: 20px;
+}
+main .main-content .tweet .content-suntweet-user {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+main .main-content .tweet .content-suntweet-user .suntweet-user-data {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+}
+main .main-content .tweet .content-suntweet-user .suntweet-user-data .tweet-title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px;
+  width: 100%;
+}
+main .main-content .tweet .content-suntweet-user .suntweet-user-data .tweet-title li {
+  margin-right: 10px;
+}
+main .main-content .tweet .content-suntweet-user .suntweet-user-data .tweet-title li:last-child {
+  margin: 0;
+}
+main .main-content .tweet .content-suntweet-user .suntweet-user-data .tweet-title li.tweet-name {
+  font-size: 16px;
+  font-weight: 600;
+  color: #181818;
+}
+main .main-content .tweet .content-suntweet-user .suntweet-user-data .tweet-title li.tweet-nickname {
+  font-size: 16px;
+  font-weight: 600;
+  color: #181818;
+  opacity: 0.8;
+}
+main .main-content .tweet .content-suntweet-user .suntweet-user-data .tweet-title li.tweet-date {
+  font-size: 14px;
+  font-weight: 600;
+  color: brown;
+}
+main .main-content .tweet .content-suntweet-user .suntweet-user-data .tweet-content {
+  font-size: 16px;
+  color: #181818;
+  margin: 0 0 20px;
+}
+main .main-content .tweet .content-suntweet-user .tweet-actions-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+main .main-content .tweet .content-suntweet-user .tweet-actions-container .tweet-action {
+  margin-right: 10%;
+}
+main .main-content .tweet .content-suntweet-user .tweet-actions-container .tweet-action .action-icon {
+  color: #181818;
+  margin-right: 5px;
+}
+main .main-content .tweet .content-suntweet-user .tweet-actions-container .tweet-action .action-icon:hover {
+  transition: 0.3s;
+  color: brown;
+}
+
+.forms-block {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20%;
+}
+
+.forms-block form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.5s;
+  margin-bottom: 30px;
+}
+
+.forms-block input {
+  width: 350px;
+  height: 50px;
+  border: 1px solid #ededed;
+  border-radius: 5px;
+  padding: 0 10px;
+  font-size: 16px;
+  color: #000;
+  margin-bottom: 8px;
+  transition: 0.3s;
+}
+.forms-block input::placeholder {
+  font-family: Cambria, sans-serif;
+  font-size: 16px;
+}
+
+.forms-block input::placeholder {
+  font-family: Cambria, sans-serif;
+  font-size: 16px;
+  color: #ccc;
+}
+
+.forms-block input:active,
+.forms-block input:focus,
+.forms-block input:hover {
+  outline: none;
+  border: 1px solid blueviolet;
+}
+
+.forms-block button {
+  width: 100%;
+  height: 50px;
+  font-family: Cambria, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  border-radius: 5px;
+  background-color: brown;
+  border: 1px solid #ededed;
+  transition: 0.3s;
+}
+.forms-block button i {
+  margin-right: 5px;
+}
+
+.forms-block button:hover {
+  opacity: 0.9;
+}
+
+.forms-block button[disabled] {
+  opacity: 0.6;
+  background-color: #cccccc;
+}
+
+#verification-mes {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+  margin: 20px 0 20px 0;
+  border-radius: 5px;
+  padding: 0 20px;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+}
+
+#verification-mes strong {
+  font-weight: 600;
+  margin-right: 5px;
+}
+
+#verification-mes.error {
+  display: flex;
+  background-color: red;
+}
+
+#verification-mes.success {
+  display: flex;
+  background-color: yellowgreen;
+}
+
+.forms-block ul {
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.forms-block .success {
+  display: flex;
+}
+
+.forms-block ul li {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.forms-block ul li img {
+  width: 40px;
+  height: 40px;
+  margin: 0 0 10px 0;
+}
+
+.reg-message {
+  font-size: 20px;
+  color: brown;
+  font-weight: bold;
+}
+.reg-message a {
+  color: blueviolet;
+}
+.reg-message a:hover {
+  text-decoration: underline;
+}
