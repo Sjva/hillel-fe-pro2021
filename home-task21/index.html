@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home task №21</title>
+    <link rel="stylesheet" href="./dist/main.css">
+    <script src="./dist/bundle.js" defer></script>
+</head>
+<body>
+
+<!--Задание для домашки #21-->
+<!--Настроить webpack для сборки проекта, добавить лоудеры для следующих задач:-->
+<!--распознавание JSX-->
+<!--обработка CSS и одного любого препроцессора-->
+<!--добавить лоудер для обработки файлов-изображений-->
+
+<!--<pre>-->
+<!--верный логин и пароль-->
+<!--"email": "eve.holt@reqres.in",-->
+<!--"password": "cityslicka"-->
+<!--</pre>-->
+
+<!--Комманда для запуска сборки webpack-->
+<!--npm run-script build-->
+<main id="app"></main>
+
+<section class="form-block">
+    <form id="form-login" action="/" method="post">
+        <input type="text" id="input-login" class="form-input" title="Введите логин" placeholder="Введите логин">
+        <input type="password" id="input-pass" class="form-input" title="Введите пароль" placeholder="Введите пароль">
+        <button id="check-btn" type="submit" title="Нажм меня" disabled="disabled">Логин</button>
+    </form>
+
+    <p id="verification-mes"></p>
+    <ul></ul>
+</section>
+
+
+
+
+<script id="item-template" type="text/template">
+    <img src="{{ava}}" alt="ava"><span>{{name}} {{last_name}}</span>
+</script>
+
+</body>
+</html>
